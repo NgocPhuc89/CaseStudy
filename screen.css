@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+body {
+    background-color:rgb(230, 231, 231);
+}
+h1 {
+    text-align: center;
+    color: rgb(5, 9, 243);
+    padding-top: 20px;
+}
+.containers {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+}
+.product {
+    margin: 5px;
+    padding: 10px 5px 10px 5px;
+    background-color: white;
+    padding-top: 11px;
+    width: 30%;
+    position: relative;
+    border-radius: 5px;
+}
+.name {
+    color: brown;
+}
+.button {
+    position: absolute;
+    display: flex;
+    width: 96%;
+    justify-content: space-between;
+}
+.product:hover>.button>.delete , .product:hover>.button>.edit  {
+    display: block;
+}
+.photo {
+    margin-top: 40px;
+    height: 230px;
+    max-width: 60%;
+    margin-left: 30px;
+}
+.description {
+    font-size: 13px ;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    height: 30px;
+    word-wrap: break-word;
+}
+.price {
+    font-weight: bolder;
+    background-color: white;
+    margin-bottom: 10px;
+}
+.img :hover{
+    cursor:pointer;
+    transform: scale(1.1, 1.1);
+    transition: 0.5s ease-in-out;
+}
+.icon {
+    cursor: pointer;
+}
+.table_add {
+    background-color: aqua;
+    width: 400px;
+    top: 100px;
+    left: 500px;
+    height: 140px;
+    position: fixed;
+    display: none;
+    color: blue;
+}
+.table_edit {
+    background-color: aqua;
+    width: 400px;
+    top: 100px;
+    left: 1000px;
+    height: 140px;
+    position: fixed;
+    display: none;
+    color: blue;
+}
+.edit:hover{
+    cursor: pointer;
+}
+.delete:hover {
+    cursor: pointer;
+}
+.delete, .edit {
+    display: none;
+}
+
+
