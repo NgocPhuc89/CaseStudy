@@ -14,9 +14,6 @@ let screens = [
     new product (3, "https://philong.com.vn/media/product/250-20714-m--n-h--nh-lcd-samsung-27-inch-lc27r500fhexxv-2.jpg", "SAMSUNG", "Màn hình cong 27 SAMSUNG LC27R500FHE", 4490000),
     new product (4, "https://philong.com.vn/media/product/250-27120-3.jpg", "SAMSUNG", "Màn hình 23.8inch Samsung LS24R350FZEXXV ", 3140000),
     new product (5, "https://philong.com.vn/media/product/250-28089-vz249ehe-8.jpg","ASUS","Màn hình siêu mỏng 24 inch ASUS VZ24EHE", 3090000),
-    new product (16, "https://philong.com.vn/media/product/250-29610-man-hinh-lenovo-q27q-20-66efgac3-philong3.png", "LENOVO", "Màn Hình Lenovo 2K 27 inch Q27q-20 66EFGAC3VN", 5990000),
-    new product (7, "https://philong.com.vn/media/product/250-21101-27r350-5.jpg", "SAMSUNG", "Màn hình 27 SAMSUNG LS27R350FHE", 4090000),
-    new product (8, "https://philong.com.vn/media/product/250-14672-c27f397fhe.jpg", "SAMSUNG", "Màn hình cong 27 SAMSUNG C27F397FHE", 4490000, )
 ]
 function drawScreens(){
     document.querySelector('.containers').innerHTML = "";

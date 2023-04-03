@@ -8,6 +8,7 @@ body {
     background-color:rgb(230, 231, 231);
 }
 h1 {
+    width: 68%;
     text-align: center;
     color: rgb(5, 9, 243);
     padding-top: 20px;
@@ -22,7 +23,7 @@ h1 {
     padding: 10px 5px 10px 5px;
     background-color: white;
     padding-top: 11px;
-    width: 30%;
+    width: 31%;
     position: relative;
     border-radius: 5px;
 }
@@ -72,7 +73,7 @@ h1 {
 }
 .table_add , .table_edit {
     background-color: aqua;
-    width: 33%;
+    width: 31%;
     top: 330px;
     right: 10px;
     height: 140px;
