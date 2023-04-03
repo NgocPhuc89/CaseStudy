@@ -69,12 +69,12 @@ h1 {
     text-align: right;
     position: fixed;
     right: 10px;
-    top: 220px;
+    top: 215px;
 }
 .table_add , .table_edit {
-    background-color: aqua;
+    background-color: rgb(7, 219, 219);
     width: 31%;
-    top: 330px;
+    top: 300px;
     right: 10px;
     height: 140px;
     position: fixed;
@@ -91,6 +91,27 @@ h1 {
 }
 .delete, .edit {
     display: none;
+    border-radius: 5px ;
+    border: 1px solid black;
+    width: 60px;
+    text-align: center;
+}
+.edit {
+    background-color: rgb(87, 235, 87);
+}
+.delete {
+    background-color: crimson;
+    color: white;
+}
+button {
+    border: 1px solid red;
+    border-radius: 5px ;
+    background-color: rgb(198, 241, 42);
+    color: blue;
+}
+input {
+    border: 1px solid red;
+    border-radius: 5px ;
 }
 
 
