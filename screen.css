@@ -64,26 +64,23 @@ h1 {
 }
 .icon {
     cursor: pointer;
+    /* border: 1px solid; */
+    text-align: right;
+    position: fixed;
+    right: 10px;
+    top: 220px;
 }
-.table_add {
+.table_add , .table_edit {
     background-color: aqua;
-    width: 400px;
-    top: 100px;
-    left: 500px;
+    width: 33%;
+    top: 330px;
+    right: 10px;
     height: 140px;
     position: fixed;
     display: none;
     color: blue;
-}
-.table_edit {
-    background-color: aqua;
-    width: 400px;
-    top: 100px;
-    left: 1000px;
-    height: 140px;
-    position: fixed;
-    display: none;
-    color: blue;
+    border-radius: 5px;
+    border: 2px solid rgb(245, 96, 96);
 }
 .edit:hover{
     cursor: pointer;

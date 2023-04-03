@@ -44,9 +44,7 @@ function formatCurrency(number){
 }
 function addClick(){
     document.getElementsByClassName('table_add')[0].style.display = "block";
-}
-function editClick(){
-    document.getElementsByClassName('table_edit')[0].style.display = "block";
+    document.getElementsByClassName('table_edit')[0].style.display = "none";
 }
 function cancelClick_1(){
     document.getElementsByClassName('table_add')[0].style.display = "none";
@@ -119,16 +117,52 @@ function deleteClick(id){
     }
 }
 
-function editProducts(id){
-    for ( let i = 0 ; i < screens.length ; i++){
-        if ( screens[i].id = id){
-            document.getElementById("img-edit").value = product.img ;
-            document.getElementById("name-edit").value = product.name ;
-            document.getElementById("description-edit").value = product.description ;
-            document.getElementById("price-edit").value = product.price ;
+function editClick(id){
+    document.getElementsByClassName('table_edit')[0].style.display = "block";
+    document.getElementsByClassName('table_add')[0].style.display = "none";
+    document.getElementById('idEdit').value = id ;
+    let p = findId(id);
+        if ( p != null ){
+            document.getElementById("img-edit").value = p.img ;
+            document.getElementById("name-edit").value = p.name ;
+            document.getElementById("description-edit").value = p.description ;
+            document.getElementById("price-edit").value = p.price ;
         }
         else{
-            return null;
+            alert ('fail');
+        } 
+}
+
+function findId(id){
+    for ( let i = 0 ; screens.length ; i++){
+        if ( screens[i].id == id){
+            return screens[i];
+        }
+    }
+    return null;
+}
+
+function editProducts(){
+    let id = +document.getElementById("idEdit").value;
+    let img = document.getElementById("img-edit").value;
+    let name = document.getElementById("name-edit").value ;
+    let description = document.getElementById("description-edit").value;
+    let price = +document.getElementById("price-edit").value;
+
+    let newProduct = new product ( id , img, name, description, price);
+    update ( id , newProduct );
+    document.getElementsByClassName('table_edit')[0].style.display = "none";
+    drawScreens();
+}
+
+function update (id , newProduct){
+    for ( let i = 0 ; i < screens.length ; i++){
+        if ( screens[i].id == id){
+            screens[i].img = newProduct.img ;
+            screens[i].name = newProduct.name;
+            screens[i].description = newProduct.description;
+            screens[i].price = newProduct.price;
         }
     }
 }
+

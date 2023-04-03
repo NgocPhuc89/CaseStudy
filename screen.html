@@ -16,9 +16,9 @@
                 width="100%"> 
         </div>
         <h1>MÀN HÌNH MÁY TÍNH</h1>
-        <div>
-            <img class="icon" onclick="addClick()" src="https://cdn-icons-png.flaticon.com/128/3032/3032276.png"
-                width="4%">       
+        <div class="icon">
+            <img  onclick="addClick()" src="https://cdn-icons-png.flaticon.com/128/3032/3032276.png"
+                width="50%">       
         </div>
         <div class="containers">
             <!-- <div class="product">
@@ -82,6 +82,7 @@
         </div>
         <div class="table_edit">
             <form>
+                <input type="hidden" id="idEdit"/>
                 <table>
                     <caption>
                         <h2>Edit Products</h2>
@@ -90,25 +91,25 @@
                         <tr>
                             <td>Photo</td>
                             <td colspan="2" style="width: 300px;">
-                                <input class="img-edit" type="text" style="width: 100%;">
+                                <input id="img-edit" type="text" style="width: 100%;">
                             </td>
                         </tr>
                         <tr>
                             <td>Name</td>
                             <td colspan="2" style="width: 300px;">
-                                <input class="name-edit" type="text" style="width: 100%;">
+                                <input id="name-edit" type="text" style="width: 100%;">
                             </td>
                         </tr>
                         <tr>
                             <td>Description</td>
                             <td colspan="2" style="width: 300px;">
-                                <input class="description-edit" type="text" style="width: 100%;">
+                                <input id="description-edit" type="text" style="width: 100%;">
                             </td>
                         </tr>
                         <tr>
                             <td>Price</td>
                             <td colspan="2" style="width: 300px;">
-                                <input class="price-edit" type="number" style="width: 100%;">
+                                <input id="price-edit" type="number" style="width: 100%;">
                             </td>
                         </tr>
                         <tr>
